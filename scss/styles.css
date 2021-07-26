@@ -54,4 +54,36 @@
   -webkit-transform: scale(1.3, 1.3);
           transform: scale(1.3, 1.3);
 }
+
+@media only screen and (min-width: 427px) and (max-width: 1025px) {
+  .body--color .header--color .header_titulo--font {
+    font-size: 4.5rem;
+  }
+  .body--color .titulo2--font--size {
+    font-size: 1.8rem;
+  }
+  .body--color .parrafo--font--size {
+    font-size: 0.9rem;
+  }
+  .body--color .carousel_imagenes--tamano {
+    height: 350px;
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .body--color .header--color .header_titulo--font {
+    font-size: 2.2rem;
+  }
+  .body--color .titulo2--font--size {
+    font-size: 1.2rem;
+  }
+  .body--color .parrafo--font--size {
+    font-size: 0.7rem;
+  }
+  .body--color .carousel_imagenes--tamano {
+    height: 200px;
+    width: 250px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

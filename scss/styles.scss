@@ -42,4 +42,40 @@
             transform: scale(1.3, 1.3)
             }
         }
+        @media only screen and (min-width: 427px) and (max-width: 1025px){
+            .header--color{
+                .header_titulo--font{
+                    font-size: 4.5rem;
+                }
+            }
+            .titulo2--font--size{
+                font-size: 1.8rem;
+            }
+            .parrafo--font--size{
+                font-size: 0.9rem;
+            }
+            .carousel_imagenes--tamano{
+                height: 350px;
+                width: 450px;
+            }
+        }
+
+        @media only screen and (max-width: 426px){
+            .header--color{
+                .header_titulo--font{
+                    font-size: 2.2rem;
+                }
+            }
+            .titulo2--font--size{
+                font-size: 1.2rem;
+            }
+            .parrafo--font--size{
+                font-size: 0.7rem;
+            }
+            .carousel_imagenes--tamano{
+                height: 200px;
+                width: 250px;
+            }
+        }
+
 }
