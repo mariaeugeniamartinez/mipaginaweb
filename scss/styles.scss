@@ -1,3 +1,11 @@
+// LINKS A LOS DEMAS SCSS
+@import "colors";
+@import "header";
+@import "menu";
+@import "footer";
+@import "mediaquerries";
+
+// RESETEO CSS
 *{
     margin: 0;
     padding: 0;
@@ -5,22 +13,8 @@
 }
 
 .body--color{
-    background-color: #FAF3E0;
-        .header--color{
-            background-color: #8E9775;
-                .header_titulo--font{
-                    font-size: 6rem;
-                    font-family: 'Mate SC', serif;         
-                }
-        }
-        .menu--color{
-            font-family: 'Bebas Neue', cursive;
-            font-size: 1.2rem;
-            font-weight: 400;
-            line-height: 1;
-            color: rgba(0,0,0,.55);
-        
-        }
+    background-color: $colorbg;
+        // CARROUSEL DEL INDEX
         .carousel_imagenes--tamano{
             height: 400px;
             margin: auto;        
@@ -29,53 +23,94 @@
             margin-right: 0%;
             margin-left: 0%;
         }
-        .footer{
-            background-color: #8E9775;
-            .footer_iconos--tamano{
-                width: 50px;
-                height: 50px;        
-            }
-        }
-        .transicion{
-            transition: all 1s ease;
-        .transicion:hover{
-            transform: scale(1.3, 1.3)
-            }
-        }
-        @media only screen and (min-width: 427px) and (max-width: 1025px){
-            .header--color{
-                .header_titulo--font{
-                    font-size: 4.5rem;
-                }
-            }
-            .titulo2--font--size{
-                font-size: 1.8rem;
-            }
-            .parrafo--font--size{
-                font-size: 0.9rem;
-            }
-            .carousel_imagenes--tamano{
-                height: 350px;
-                width: 450px;
-            }
-        }
+    // GRILLA DEL INDEX        
+    #grilla{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 360px 100px 300px 300px 70px 305px 305px 100px;
+        grid-template-areas: 
+            "caja2 caja1 caja1"
+            "caja4 caja4 caja5"
+            "caja7 caja6 caja6"
+            "caja8 caja8 caja9"
+            "cajadiez cajadiez cajadiez"
+            "cajaonce cajadoce cajadoce"
+            "cajatrece cajacatorce cajaquince"
+            "cajadieciseis cajadieciseis cajadieciseis";
+        gap: 5px;
+    }
+    .caja0{
+        grid-area: caja0;
+    }
+    .caja1{
+        grid-area: caja1;
+    }
+    .caja2{
+        width: 300px;
+        height: 400px;
+        grid-area: caja2;
+    }
+    .caja3{
+        grid-area: caja3;
+    }
+    .caja4{
+        grid-area: caja4;
+    }
+    .caja5{
+        width: 40px;
+        height: 40px;
+        grid-area: caja5;
+    }
+    .caja6{
+        grid-area: caja6;
+    }
+    .caja7{
+        grid-area: caja7;
+    }
+    .caja8{
+        grid-area: caja8;
+    }
+    .caja9{
+        grid-area: caja9;
+    }
+    .cajadiez{
+        grid-area: cajadiez;
+    }
+    .cajaonce{
+        grid-area: cajaonce;
+    }
+    .cajadoce{
+        grid-area: cajadoce;
 
-        @media only screen and (max-width: 426px){
-            .header--color{
-                .header_titulo--font{
-                    font-size: 2.2rem;
-                }
-            }
-            .titulo2--font--size{
-                font-size: 1.2rem;
-            }
-            .parrafo--font--size{
-                font-size: 0.7rem;
-            }
-            .carousel_imagenes--tamano{
-                height: 200px;
-                width: 250px;
-            }
-        }
-
+    }
+    .cajatrece{
+        grid-area: cajatrece;
+    }
+    .cajacatorce{
+        grid-area: cajacatorce;
+    }
+    .cajaquince{
+        grid-area: cajaquince;
+    }
+    .cajadieciseis{
+        grid-area: cajadieciseis;
+    }
+    // FIN GRILLA DEL INDEX
+    // TAMAÑOS DE IMAGENES INDEX
+    .imagen--perfil--tamano{
+        width: 250px;
+        height: 350px;
+    }
+    .imagenes--tamano{
+        width: 250px;
+        height: 250px;
+    }
+    .tamano--location--icon{
+        width: 40px;
+        height: 40px;
+    }
 }
+
+
+
+

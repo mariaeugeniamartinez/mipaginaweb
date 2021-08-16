@@ -1,0 +1,64 @@
+@media only screen and (min-width: 427px) and (max-width: 1025px){
+    .header--color{
+        .header_titulo--font{
+            font-size: 4.5rem;
+        }
+    }
+    .titulo2--font--size{
+        font-size: 1.8rem;
+    }
+    .parrafo--font--size{
+        font-size: 0.9rem;
+    }
+    .carousel_imagenes--tamano{
+        height: 350px;
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .header--color{
+        .header_titulo--font{
+            font-size: 2.2rem;
+        }
+    }
+    .titulo2--font--size{
+        font-size: 1.2rem;
+    }
+    .parrafo--font--size{
+        font-size: 0.7rem;
+    }
+    .carousel_imagenes--tamano{
+        height: 200px;
+        width: 250px;
+    }
+    #grilla{
+        grid-template-columns: 1fr;
+        grid-template-rows: 360px 100px 300px 300px 70px 305px 305px 100px;
+        grid-template-areas:
+            "caja2" 
+            "caja1" 
+            "caja1"
+            "caja4" 
+            "caja4" 
+            "caja5"
+            "caja7" 
+            "caja6" 
+            "caja6"
+            "caja8" 
+            "caja8" 
+            "caja9"
+            "cajadiez"
+            "cajadiez"
+            "cajadiez"
+            "cajaonce" 
+            "cajadoce" 
+            "cajadoce"
+            "cajatrece" 
+            "cajacatorce" 
+            "cajaquince"
+            "cajadieciseis" 
+            "cajadieciseis" 
+            "cajadieciseis";
+    }
+}

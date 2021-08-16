@@ -27,8 +27,8 @@
     <link rel="icon" href="imagenes/logo.png">
 </head>
 
-<body class="container-fluid body--color">
-    <header class="row header--color pt-1 pb-1 text-light">
+<body class="body--color">
+    <header class="header--color">
         <!-- LISTA DE MENU ARRIBA A LA DERECHA CON BOOTSTRAP-->
         <section class="row">
             <ul class="navbar-nav">
@@ -40,7 +40,7 @@
             </ul>
         </section>
         <!--LISTA DE MENU A LA IZQUIERDA CON BOOTSTRAP-->
-        <nav class="row navbar navbar-expand-lg navbar-light menu--color">
+        <nav class="navbar navbar-expand-lg navbar-light menu--color">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -113,32 +113,75 @@
         <!-- TITULO DE LA PAGINA -->
         <h1 class="header_titulo--font">Maria Eugenia Martinez</h1>
     </header>
-    <!-- CAJA DE TEXTO ABOUT ME -->
-    <div class="row">
-        <div class="col-12 pt-5 pb-5">
-            <h2 class="titulo2--font--size">Sobre mi...</h2>
-            <p class="parrafo--font--size">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum,
-                quaerat, ea rerum possimus
-                id
-                repellat quis laboriosam
-                autem est doloribus molestiae, doloremque voluptas recusandae rem! Neque repellendus temporibus sit.
-            </p>
-            <p class="parrafo--font--size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias
-                quo incidunt cupiditate
-                similique
-                omnis beatae deserunt
-                explicabo ea, exercitationem delectus repudiandae illum qui nam aspernatur ad quasi adipisci
-                expedita.
-            </p>
-            <p class="parrafo--font--size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, beatae.
-                Adipisci, deleniti
-                voluptatem
-                iste laboriosam totam
-                velit iusto sint architecto. Mollitia vero itaque eligendi, quidem nostrum corporis modi tempora
-                molestiae!
-            </p>
+    <!-- SECCION ABOUT ME -->
+    <article>
+        <h2 class="titulo2--font--size">Sobre mi</h2>
+        <div id="grilla">
+            <div class="caja1">
+                <p class="parrafo--font--size">Hola! Mi nombre es Maria Eugenia Martinez</p>
+                <p class="parrafo--font--size">Bienvenidos/as a mi página personal. El principal objetivo de esta web es
+                    presentarme, contar un poco sobre mí, las temáticas que me interesan, mostrar algunos de mis
+                    trabajos,
+                    mi formación y generar algún que otro contenido de utilidad.
+                </p>
+            </div>
+            <div class="caja2">
+                <img src="imagenes/Perfil.jpg" alt="Perfilimage" class="imagen--perfil--tamano">
+            </div>
+            <div class="caja4">
+                <p class="parrafo--font--size"> Arrancamos!
+                    Tengo 26 años, nací en Florencio Varela, Buenos Aires, Argentina.
+                </p>
+            </div>
+            <div class="caja5">
+                <img src="imagenes/Location.png" alt="location_marker_image" class="tamano--location--icon">
+            </div>
+            <div class="caja6">
+                <p class="parrafo--font--size">
+                    Fui al colegio Nuestra Señora del Sagrado Corazón, donde me egresé en el año 2012 con título de
+                    Bachiller en
+                    Economía y Administración.
+                </p>
+            </div>
+            <div class="caja7">
+                <img src="imagenes/Colegio.jfif" alt="colegio_image" imagenes--tamano">
+            </div>
+            <div class="caja8">
+                <p class="parrafo--font--size">
+                    Tengo un hermoso hermanito que me acompaña hace ya varios años, su nombre es Coki
+                </p>
+            </div>
+            <div class="caja9">
+                <img src="imagenes/Coki.jpeg" alt="coki_image" class="imagenes--tamano">
+            </div>
+            <div class="cajadiez">
+                <p class="parrafo--font--size">
+                    Mis pasatiempos favoritos son pintar, salir a correr, disfrutar del sol tomando mates con amigas.
+                </p>
+            </div>
+            <div class="cajaonce">
+                <img src="imagenes/Friends_dos.jpg" alt="friends_image" class="imagenes--tamano">
+            </div>
+            <div class="cajadoce">
+                <img src="imagenes/Friends.png" alt="friends_image" class="imagenes--tamano">
+            </div>
+            <div class="cajatrece">
+                <img src="imagenes/Flowers.jpg" alt="flowers_paint" class="imagenes--tamano">
+            </div>
+            <div class="cajacatorce">
+                <img src="imagenes/Painting.jpg" alt="painting_image" class="imagenes--tamano">
+            </div>
+            <div class="cajaquince">
+                <img src="imagenes/Painting_mountains.jpg" alt="paint_mountains_image" class="imagenes--tamano">
+            </div>
+            <div class="cajadieciseis">
+                <p class="parrafo--font--size">
+                    Habiendo hecho una breve introducción, los invito a visitar cada una de las secciones de mi web, a
+                    las cuales podrán acceder desde el menú y/o haciendo clic en las imágenes del carrousel...
+                </p>
+            </div>
         </div>
-    </div>
+    </article>
     <!-- CAROUSEL BOOTSTRAP-->
     <div id="carouselExampleIndicators" class="pb-5 carousel slide row carousel-dark" data-bs-ride="carousel">
         <div class="carousel-indicators sizeCarousel">
@@ -154,17 +197,20 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="paginas/contabilidad.html">
-                    <img src="imagenes/Contabilidad.jpg" class="d-block w-90 carousel_imagenes--tamano" alt="...">
+                    <img src="imagenes/Contabilidad.jpg" class="d-block w-90 carousel_imagenes--tamano"
+                        alt="Contabilidad_image">
                 </a>
             </div>
             <div class="carousel-item">
                 <a href="paginas/pscioanalisis.html">
-                    <img src="imagenes/Psicoanalisis.jpg" class="d-block w-90 carousel_imagenes--tamano" alt="...">
+                    <img src="imagenes/Psicoanalisis.jpg" class="d-block w-90 carousel_imagenes--tamano"
+                        alt="Psicoanalisis_image">
                 </a>
             </div>
             <div class="carousel-item">
                 <a href="paginas/desarrolloweb.html">
-                    <img src="imagenes/Programacion.jpg" class="d-block w-90 carousel_imagenes--tamano" alt="...">
+                    <img src="imagenes/Programacion.jpg" class="d-block w-90 carousel_imagenes--tamano"
+                        alt="Programacion_image">
                 </a>
             </div>
             <div class="carousel-item">
